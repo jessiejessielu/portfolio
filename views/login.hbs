@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Admin</title>
+
+
+      <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/hover/hover.min.css" rel="stylesheet">
+  <link href="/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+
+ 
+ <link href="/css/main.css" rel="stylesheet">
+ <link href="/css/form.css" rel="stylesheet">
+ 
+  </head>
+
+ <body>   
+
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+              <a href="index.php"><img src="assets/images/logo.png" width="40" alt="logo"></a>
+              <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+                  <ul class="nav-menu list-unstyled">
+                    <li><a href="/" class="smoothScroll">WORK</a></li>
+                    <li><a href="/about" class="smoothScroll">ABOUT</a></li>
+                    <li><a href="/contact" class="smoothScroll">CONTACT</a></li>
+                    <li><a href="/admin" class="smoothScroll">ADMIN</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    {{!--================= SIGNIN FORM================ --}}
+    <div class="text-center">
+        
+        <form class="form-signin" action="/admin" method="POST">
+          <h1 class="h3 mb-3 font-weight-normal">Welcome, admin</br> Sign In</h1>
+          
+          <label for="inputEmail" class="sr-only">Email</label>
+          <input type="email" name="email" id="inputEmail" class="form-control"  placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+          {{#if errorMessage }}
+            <div class="error-message">{{ errorMessage }}</div>
+          {{/if}}
+
+          {{!-- <p>Not on Book'd yet?<a href="/admin">sign up</a></p> --}}
+          <button class="btn btn-lg btn-dark btn-block" type="submit">Sign in</button>
+          
+        </form>
+    </div>
+    {{!-- end of form --}}
+
+   
+    <!-- ======= Footer ======= -->
+      <div id="footer" class="text-center">
+        <div class="container">
+          <div class="socials-media">
+            <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/jessiejessielu/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="https://twitter.com/jessiejielu" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jessie-lu-9581992a/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+
+          <p>Jessie Lu&copy; Copyrights-2021. All rights reserved.</p>
+
+        </div>
+      </div><!-- End Footer -->
+
+
+
+</body>
+
+
+
+  </body>
+</html>
