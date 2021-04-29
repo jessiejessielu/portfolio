@@ -110,6 +110,10 @@ app.get('/bookd', (req, res) => {
     res.render('bookd.hbs'); //by default, hbs views are placed in a "views" folder
 })
 
+app.get('/smartwatch', (req, res) => {
+    res.render('smartwatch.hbs'); //by default, hbs views are placed in a "views" folder
+})
+
 app.get('/contact', (req, res) => {
     res.render('contact.hbs');
 })
